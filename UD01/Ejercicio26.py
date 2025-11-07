@@ -6,8 +6,10 @@
 # Los primeros 500€ son libres de impuestos.
 # Los siguientes 400€ tiene un 25% de impuesto.
 # Los restantes un 45% de impuesto.
+# Escribe el nombre del trabajador, salario bruto, tasas y salario neto
 
-# Solicita las horas trabajadas y la tarifa por hora
+# Solicita los datos del trabajador
+nombre = input("Introduce el nombre del trabajador: ")
 horas_trabajadas = float(input("Introduce el número de horas trabajadas esta semana: "))
 tarifa_normal = float(input("Introduce la tarifa por hora (€): "))
 
@@ -18,7 +20,7 @@ else:
     horas_extra = horas_trabajadas - 35
     salario_bruto = (35 * tarifa_normal) + (horas_extra * tarifa_normal * 1.5)
 
-# Calcula los impuestos según tramos
+# Calcula los impuestos según los tramos
 if salario_bruto <= 500:
     impuestos = 0
 elif salario_bruto <= 900:
@@ -30,6 +32,8 @@ else:
 salario_neto = salario_bruto - impuestos
 
 # Muestra los resultados
+print("\n--- RESUMEN SEMANAL ---")
+print(f"Nombre del trabajador: {nombre}")
 print(f"Salario bruto: {salario_bruto:.2f} €")
-print(f"Impuestos: {impuestos:.2f} €")
+print(f"Impuestos aplicados: {impuestos:.2f} €")
 print(f"Salario neto: {salario_neto:.2f} €")
