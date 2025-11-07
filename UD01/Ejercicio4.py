@@ -1,4 +1,4 @@
-#Dibuja un ordinograma que lea dos números, calcule y muestre 
+# Ejercicio5: Dibuja un ordinograma que lea dos números, calcule y muestre 
 # el valor de sus suma, resta,producto y división.
 
 # Entrada de datos
