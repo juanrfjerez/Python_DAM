@@ -1,3 +1,21 @@
+"""
+Enunciado:
+
+Imprime un diamante hueco de altura total 2n - 1, 
+centrado con asteriscos, donde solo se imprimen los bordes y el centro.
+
+Figura para n=5:
+
+    *
+   * *
+  *   *
+ *     *
+*       *
+ *     *
+  *   *
+   * *
+    *
+"""
 altura = int(input("Introduce la altura del rombo: "))
 
 for i in range (1, altura + 1):
